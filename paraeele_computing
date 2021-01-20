@@ -1,0 +1,1 @@
+ls *.nii | parallel --jobs 8 recon-all -s {.} -i {} -all -qcache
