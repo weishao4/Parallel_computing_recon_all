@@ -1,0 +1,3 @@
+#This is how you parallel computing the recon job
+
+ls *.nii | parallel --jobs 8 recon-all -s {.} -i {} -all -qcache
